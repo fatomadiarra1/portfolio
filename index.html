@@ -697,14 +697,31 @@
             revealOnScroll('.project-card');
         });
         // Contact Form (Fake submit)
-        document.getElementById('contactForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            document.getElementById('contactSuccess').style.display = 'block';
-            setTimeout(() => {
-                document.getElementById('contactSuccess').style.display = 'none';
-                this.reset();
-            }, 2500);
-        });
+        document.addEventListener('DOMContentLoaded', function () {
+            
+                const contactForm = document.getElementById('contactForm');
+                const contactSuccess = document.getElementById('contactSuccess');
+            
+                if (!contactForm || !contactSuccess) {
+                    console.error("Formulaire ou message de succès introuvable !");
+                    return;
+                }
+            
+                contactForm.addEventListener('submit', function (e) {
+                    e.preventDefault();
+            
+                    // Afficher le message de succès
+                    contactSuccess.style.display = 'block';
+            
+                    // Masquer le message après 2,5 secondes
+                    setTimeout(() => {
+                        contactSuccess.style.display = 'none';
+                        contactForm.reset();
+                    }, 2500);
+            
+                });
+            
+            });
         // Interactive Cursor
         const cursor = document.getElementById('cursor');
         document.addEventListener('mousemove', e => {
