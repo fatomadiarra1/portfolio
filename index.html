@@ -605,14 +605,54 @@
         </div>
     </section>
     <!-- Contact Section -->
-    <section class="section" id="contact">
-        <h2 class="section-title">Contact</h2>
-        <h2>Contactez‑moi</h2>
-        <p><strong>Email :</strong> diarraftoma84@gmail.com</p>
-        <p><strong>Téléphone :</strong> +223 94 58 69 44</p> <br> <p><strong>Téléphone :</strong> +223 51 00 38 48</p>
-        <p><strong>Localité :</strong> Banconi Dianguinébougou, Rue 479 Porte 37</p>
-        <p style="margin-top:12px;"><a href="cv_fatoma_diarra.pdf" class="cv-btn" download>Télécharger mon CV (PDF)</a></p>
-    </section>
+        <section class="section" id="contact">
+        
+            <h2 class="section-title">Contact</h2>
+        
+            <h2>Contactez-moi</h2>
+        
+            <p><strong>Email :</strong> diarraftoma84@gmail.com</p>
+            <p><strong>Téléphone :</strong> +223 94 58 69 44</p>
+            <p><strong>Téléphone :</strong> +223 51 00 38 48</p>
+        
+            <p><strong>Localité :</strong> Banconi Dianguinébougou</p>
+        
+            <form id="contactForm" class="contact-form">
+        
+                <input type="text"
+                       name="nom"
+                       placeholder="Votre nom"
+                       required>
+        
+                <input type="email"
+                       name="email"
+                       placeholder="Votre adresse email"
+                       required>
+        
+                <textarea name="message"
+                          placeholder="Votre message"
+                          rows="5"
+                          required></textarea>
+        
+                <button type="submit" class="btn">
+                    Envoyer le message
+                </button>
+        
+                <div id="contactSuccess"
+                     class="contact-success"
+                     style="display:none;">
+                    Votre message a été envoyé avec succès !
+                </div>
+        
+            </form>
+        
+            <p>
+                <a href="cv_fatoma_diarra.pdf" download>
+                    Télécharger mon CV (PDF)
+                </a>
+            </p>
+        
+        </section>
     <!-- Footer -->
     <footer>
         &copy; 2024 Fatoma Diarra — Génie Informatique, Réseaux & Télécommunications, Cybersécurité
