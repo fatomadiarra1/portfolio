@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://fatomadiarra.vercel.app/sitemap.xml
