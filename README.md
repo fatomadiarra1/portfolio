@@ -23,7 +23,7 @@ Site portfolio personnel présentant mon profil, mes compétences et mes projets
 ```
 portfolio/
 ├── index.html              # Page unique (HTML, CSS et JavaScript)
-├── Fatoma-diarra-cv.pdf    # CV téléchargeable
+├── CV_Fatoma_Diarra.pdf    # CV téléchargeable
 ├── profil_cd.jpeg          # Photo de profil
 ├── sever.jpeg              # Illustration — serveurs Web & AD
 ├── voip_sever.jpeg         # Illustration — infrastructure VoIP
